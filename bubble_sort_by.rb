@@ -1,22 +1,19 @@
-def buble_sort(arr)
-    n = arr.length
-    aux = ""
+def bubble_sort_by array
+	swapped  = true
+	while swapped == true
+ 		swapped = false
+ 		(array.length - 1).times do |x|
+		if yield(array[x], array[x+1]) > 0
+			array[x], array[x+1] = array[x+1], array[x]
+ 			swapped = true
+ 			break if swapped == false
+ 			end
+ 		end
+ 	end
+ 	p array
+ end
 
-    loop do
-        sorted = -1
-        (n-1).times do|i|
 
-          if arr[i].length - arr[i + 1].length < 0
-            aux = arr[i+1]
-            arr[i+1]= arr[i]
-            arr[i]=aux
-          end
-
-        end
-        break if not sorted
-    end
-    arr
-end
-
-x = ["hi", "hey", "hello"]
-puts buble_sort(x)
+bubble_sort_by(["123", "1", "1234"]) do |left,right|
+ 	left.length - right.length
+ end
