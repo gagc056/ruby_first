@@ -1,19 +1,18 @@
 
 def buble_sort(arr)
     n=array.lenght
-    sorted = -1
-    while sorted != 0
-        swap = 0
+    swapped = -1
+    while swapped != 0
+        swapped = 0
         loop do
-          sorted=false
+          swapped=false
           (n-1).times do|i|
             if arr[i]>arr[i+1]
                 arr[i],arr[i+1]=arr[i+1],arr[i]
-                sorted=true
+                swapped=true
 
             end
         end
-        break if not sorted
     end
     output = arr.join(", ")
     return "[#{output}]"
