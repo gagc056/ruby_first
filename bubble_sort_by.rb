@@ -1,4 +1,4 @@
-    def bubble_sort(array)
+    def bubble_sort_by(array)
         if block_given?
                 (array.length-1).times do |i|
                     i=0
