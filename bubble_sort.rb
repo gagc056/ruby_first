@@ -1,15 +1,15 @@
-def bubble_sort_by(array)
-    sorted = false
-    loop do
-        (array.length-1).times do |i|
-            if (array[i]> array[i+1])
-                array[i], array[i+1] = array[i+1], array[i]
-                sorted = true
-            end
-        end
-        break if not sorted
+def bubble_sort(array)
+
+  (array.length-1).times do
+    i = 0
+    while i < (array.length-1)
+      if array[i] > array[i+1]
+        array[i], array[i+1] = array[i+1], array[i]
+      end
+      i += 1
     end
-    return array
+  end
+  array
 end
 
-puts bubble_sort([4,3,78,2,0,2])
+puts bubble_sort([0,30,28,252,0,2])
