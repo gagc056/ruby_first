@@ -1,6 +1,5 @@
-# frozen_string_literal: true`
+# frozen_string_literal: true
 def bubble_sort_by(array)
-  if block_given?
     s = false
     while s == false
       s = true
@@ -13,7 +12,6 @@ def bubble_sort_by(array)
     end
     array
   end
-end
 
 x = %w[a ab abcd abcde]
 puts bubble_sort_by(x) { |left, right| left.length - right.length }
