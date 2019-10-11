@@ -31,4 +31,8 @@ Layout/ExtraSpacing:
   AllowForAlignment: false
 Layout/MultilineMethodCallIndentation:
   Enabled: true
+<<<<<<< HEAD
   EnforcedStyle: indented
+=======
+  EnforcedStyle: indented
+>>>>>>> fe68c212317829ab4dc9646333a30b8562a86d77
