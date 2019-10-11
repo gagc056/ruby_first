@@ -1,5 +1,4 @@
 def bubble_sort(array)
-
   (array.length-1).times do
     i = 0
     while i < (array.length-1)
@@ -11,5 +10,4 @@ def bubble_sort(array)
   end
   array
 end
-
 puts bubble_sort([0,30,28,252,0,2])
