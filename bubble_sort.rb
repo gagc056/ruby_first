@@ -5,9 +5,9 @@ def bubble_sort(array)
       if array[i] > array[i+1]
         array[i], array[i+1] = array[i+1], array[i]
       end
-      i += 1
+      i+= 1
     end
   end
   array
 end
-puts bubble_sort([0,30,28,252,0,2])
+puts bubble_sort([0, 30, 28, 252, 0, 2])
