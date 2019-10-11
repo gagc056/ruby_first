@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 def bubble_sort(array)
   (array.length - 1).times do
     i = 0
